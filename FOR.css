@@ -1,0 +1,102 @@
+/* Font style for "Happy Diwali" text */
+.red-text {
+    font-family: 'Pacifico', cursive;
+    color: red;
+    font-size: 46px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive background and layout adjustments */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("http://santhosh.comxa.com/dsm/moonlight.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+ul, li {
+    text-indent: 0;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background-color: #000;
+    color: #999;
+    font: 100%/18px helvetica, arial, sans-serif;
+}
+
+canvas {
+    cursor: crosshair;
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+
+/* Header and Background image adjustments */
+#header img {
+    width: 100%;
+    height: 20%;
+}
+
+#bg img {
+    width: 100%;
+    height: 80%;
+}
+
+#header, #bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+#header {
+    top: 0;
+}
+
+#bg {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+audio {
+    position: fixed;
+    display: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Responsive font sizing for smaller screens */
+@media (max-width: 768px) {
+    .red-text {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .red-text {
+        font-size: 28px;
+    }
+}
